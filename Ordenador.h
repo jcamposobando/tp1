@@ -21,8 +21,10 @@ public:
     //simplemente djelos con el cuerpo vaco para as evitar errores de compilacin, ya
     //que voy a correr el mismo main para todas las tareas.
     void seleccion(int * arreglo, int tamano){};
-    void insercion(int * arreglo, int tamano){};
-    void mergesort(int * arreglo, int tamano){}
+
+    void insercion(int *arreglo, int tamano);
+
+    void mergesort(int *arreglo, int tamano);
     void heapsort(int * arreglo, int tamano){};
     void quicksort(int * arreglo, int tamano){};
     void radixsort(int * arreglo, int tamano){};
