@@ -25,7 +25,8 @@ public:
     void insercion(int *arreglo, int tamano);
 
     void mergesort(int *arreglo, int tamano);
-    void heapsort(int * arreglo, int tamano){};
+
+    void heapsort(int *arreglo, int tamano);
     void quicksort(int * arreglo, int tamano){};
     void radixsort(int * arreglo, int tamano){};
     int mediana(int * arreglo, int tamano){};
