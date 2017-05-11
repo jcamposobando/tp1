@@ -6,16 +6,16 @@
 using namespace std;
 
 void Ordenador::insercion(int *arreglo, int tamano) {
-    int temporal;
+    int temporal; //variable auxiliar para intercambiar valores
+    int j; //indice del ciclo interno
+
     for (int i = 1; i < tamano; ++i) {
-        for (int j = i; j > 0; --j) {
-            if (arreglo[j] > arreglo[j - 1]) {
-                temporal = arreglo[j];
-                arreglo[j] = arreglo[j - 1];
-                arreglo[j - 1] = temporal;
-            } else {
-                break;
-            }
+        j = i;
+        while (j > 0 && arreglo[j] > arreglo[j - 1]) {
+            temporal = arreglo[j];
+            arreglo[j] = arreglo[j - 1];
+            arreglo[j - 1] = temporal;
+            --j;
         }
     }
 }

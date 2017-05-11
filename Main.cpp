@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <cmath>
 #include "time.h"
+
 using namespace std;
 
 void llenarArreglo(int *arreglo, int tamano) {
@@ -20,19 +21,20 @@ void imprimirArreglo(int *arreglo, int tamano) {
     cout << ")" << endl;
 }
 
-void correrAlgoritmos(int tamanoArreglo){
+void correrAlgoritmos(int tamanoArreglo) {
     Ordenador ordenador;
     int *arreglo = new int[tamanoArreglo];         //(mejor hacerle new al arreglo, as es ms probable que pueda detectar errores en el cdigo si algo est mal).
     llenarArreglo(arreglo, tamanoArreglo);
-    ordenador.insercion(arreglo,
-                        tamanoArreglo);   //Corra todos los algoritmos de ordenamiento, por medio del ordenador. Imprima el tiempo de ejecucin de cada uno.
+    ordenador.insercion(arreglo, tamanoArreglo);
+    imprimirArreglo(arreglo, tamanoArreglo);
+    //Corra todos los algoritmos de ordenamiento, por medio del ordenador. Imprima el tiempo de ejecucin de cada uno.
     //ordenador.seleccion(arreglo, tamanoArreglo);
     //ordenador.insercion (etc...)
     //...
-    //delete[] arreglo;
+    delete[] arreglo;
 }
 
-int main(){
+int main() {
     srand(time(0));
     correrAlgoritmos(50); //ejemplo
     return 0;
