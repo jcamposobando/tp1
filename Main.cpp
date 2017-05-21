@@ -28,7 +28,6 @@ void llenarArreglo(int *arreglo, int tamano) {
     }
 }
 
-
 void imprimirArreglo(int *arreglo, int tamano) {
     cout << "(" << to_string(arreglo[0]);
     for (int i = 1; i < tamano; ++i) {
