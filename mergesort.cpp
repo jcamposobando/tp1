@@ -6,7 +6,7 @@
 using namespace std;
 
 void Ordenador::mergesort(int *arreglo, int tamano) {
-    if (tamano > 2) {
+    if (tamano > 1) {
         int mitad1 = tamano / 2;
         int mitad2 = tamano - mitad1;
 
