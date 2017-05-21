@@ -19,6 +19,10 @@ private:
     void swap(int *arreglo, int a, int b);
 
     void heapify(int nodo, int *arreglo, int tamano);
+    
+    void particiona(int *arreglo, int inicio, int fin);
+    
+    void quicksortAyudante(int *arreglo, int inicio, int fin);
 
 public:
 
