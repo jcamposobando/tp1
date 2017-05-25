@@ -5,9 +5,19 @@
 
 using namespace std;
 
+/***
+*Descripcion: Método de ordenamiento que consiste en insertar elementos no ordenados en un arreglo ordenado.
+*Modifica: arreglo[tamano].
+*Parámetros:
+*	-int *arreglo: arreglo a ordenar.
+*	-int tamano: tamaño del arreglo.
+*Variables:
+*	-int temporal: variable auxiliar utilizada para intercambiar elementos del arreglo.
+*   -int j: indice del ciclo interno.
+***/
 void Ordenador::insercion(int *arreglo, int tamano) {
-    int temporal; //variable auxiliar para intercambiar valores
-    int j; //indice del ciclo interno
+    int temporal;
+    int j;
 
     for (int i = 1; i < tamano; ++i) {
         j = i;
