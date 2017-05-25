@@ -5,6 +5,18 @@
 
 using namespace std;
 
+/***
+*Descripcion: Método de ordenamiento recursivo que divide el arreglo en dos subarreglos de tamaño n/2 en cada llamado, hasta llegar a 
+*   subarreglos de 1 elemento (caso trivial). Luego se vuelve a unir los subarreglos hasta obtener de nuevo un arreglo de tamaño n ordenado.
+*Parámetros:
+*	-int *arreglo: arreglo a ordenar.
+*	-int tamano: tamaño del arreglo.
+*Variables:
+*	-int mitad1: tamaño del subarreglo 1 (tamaño/2).
+*	-int mitad2: tamaño del subarreglo 2 (tamaño - mitad1).
+*   -int sub1: subarreglo que contiene desde arreglo[0] hasta arreglo[mitad1].
+*   -int sub2: subarreglo que contiene desde arreglo[mitad1] hasta arreglo[tamaño].
+***/
 void Ordenador::mergesort(int *arreglo, int tamano) {
     if (tamano > 1) {
         int mitad1 = tamano / 2;
