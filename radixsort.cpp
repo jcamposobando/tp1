@@ -2,9 +2,21 @@
 
 using namespace std;
 
+
+/***
+*Descripcion: Método de comparación que utiliza el algorimo Counting sort como auxiliar para ordenar un arreglo comparando elementos por su
+*	del menor al mayor dígito significativo.
+*Parámetros:
+*	-int *arreglo: arreglo a ordenar.
+*	-int tamano: tamaño del arreglo.
+*Variables:
+*	-int maximo: Valor máximo del arreglo.
+*	-int salida[tamano]: Arreglo de salida temporal donde se va ordenando arreglo[].
+***/
+
 void Ordenador::radixsort(int *arreglo, int tamano) {
-	int maximo = arreglo [0]; //Valor maximo del arreglo
-	int salida[tamano]; //Arreglo de salida temporal donde se va ordenando arreglo[].
+	int maximo = arreglo [0]; 
+	int salida[tamano]; 
 
 	//Encuentra el valor maximo del arreglo
 	for (int i = 1; i < tamano; i++) {
